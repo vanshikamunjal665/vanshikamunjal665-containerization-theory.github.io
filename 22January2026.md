@@ -49,24 +49,101 @@ https://upessocs.github.io/#dir=/Lectures/Containerization%20and%20DevOps/Theory
 
 ---
 
-### 5. Remove Image
-![remove image](Images/Images%20Exp2/5a.png)
+### 5. List all Docker images present on the system
+`sudo docker images`
 
 ---
 
-### 6. Verify
-![Verify](Images/Images%20Exp2/6a.png)
+### 6. Creating a new container from Ubuntu image
+The container starts and immediately exits  
 
-![Verify](Images/Images%20Exp2/6b.png)
-
----
-
-## Result
-
-Docker images were successfully pulled, containers executed, and lifecycle commands performed.
+`sudo docker run ubuntu`
 
 ---
 
-## Conclusion
+### 7. Shows containers
+ * Show all running containers  
+  `sudo docker ps`  
 
-This lab demonstrated virtualization using **Vagrant + VirtualBox** and containerization using **Docker**, highlighting clear performance and resource efficiency differences. Containers are better suited for rapid deployment and microservices, while virtual machines provide stronger isolation.
+ * Show all containers (running+stopped+exited)  
+  `sudo docker ps -a`
+
+ * Show only container IDs  
+  `sudo docker ps -q`
+
+ * Filter ubuntu related containers  
+  `sudo docker ps -a | grep ubuntu`
+---
+
+### 8. Creating a new container from Ubuntu image
+it= interactive terminal  
+you are inside ubuntu container  
+
+`sudo docker run -it ubuntu`
+
+now you are inside container
+
+---
+
+### 9. Checking current directory
+
+`pwd`  
+
+Docker containers have their own isolated filesystem
+/ is the root directory of the container  
+It is NOT connected to your Windows folders by default
+
+---
+
+### 10. Showing linux directories
+
+`ls`  
+
+You are now inside a real Linux environment.
+
+---
+
+### 11. Checking if the container is running (in another terminal)
+
+`wsl`  
+`sudo docker ps`
+
+ The container is running
+
+---
+
+### 12. Exiting container
+
+`exit`  
+
+ Exiting shell = container stops if no background process.
+
+---
+
+### 13. Again checking if container is running (in another terminal)
+
+`sudo docker ps`  
+`sudo docker ps -a`
+
+The container is stopped.
+
+---
+
+### 14. Removing images
+
+`sudo docker images`  
+`sudo docker rmi 1b44` (error: The Ubuntu image is still linked to stopped containers, Docker protects images from deletion if containers exist)  
+`sudo docker rmi 1b44 -f` (force remove)    
+
+`sudo docker ps -a` (shows all containers (running + stopped), Containers still exist, but their image has been removed, they cannot be restarted properly now)
+
+---
+
+### 15. Start and restart containers
+
+`sudo docker ps`  
+`sudo docker start 1519b`  
+`sudo docker ps -a`  
+`sudo docker restart eae3`  
+
+---
