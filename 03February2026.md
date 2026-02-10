@@ -1,7 +1,6 @@
 # CONTAINERIZATION AND DEVOPS THEORY
 
 ## 03 FEBRUARY 2026
-### Cont.
 
 **Reference Link:**  
 https://upessocs.github.io/#dir=/Lectures/Containerization%20and%20DevOps/Theory/&file=014%20Docker%20API.md
