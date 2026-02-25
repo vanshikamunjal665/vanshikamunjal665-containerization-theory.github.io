@@ -22,3 +22,17 @@ https://upessocs.github.io/#dir=/Lectures/Containerization%20and%20DevOps/Theory
 ![Image](Images/25Feb/6.png)
 
 ![Image](Images/25Feb/7.png)
+
+![Image](Images/25Feb/8.png)
+
+![Image](Images/25Feb/9.png)
+
+![Image](Images/25Feb/10.png)
+
+![Image](Images/25Feb/11.png)
+
+![Image](Images/25Feb/12.png)
+
+![Image](Images/25Feb/13.png)
+
+![Image](Images/25Feb/14.png)
