@@ -25,4 +25,4 @@ BATCH: B-2 (CCVT)
 | 1   | 2   | [3](03February2026.md) | [4](04Febraury2026.md) | [5](05February2026.md) | [6](06February2026.md) | 7 |
 | 8   | 9   | [10](10February2026.md) | [11](11February2026.md) | [12](12February2026.md) | 13 | 14 |
 | 15  | 16  | 17  | [18](18February2026.md) | 19 | [20](20February2026.md) | 21 |
-| 22  | 23  | 24  | 25  | 26  | 27  | 28 |
+| 22  | 23  | 24  | [25](25February2026.md)  | 26  | 27  | 28 |
