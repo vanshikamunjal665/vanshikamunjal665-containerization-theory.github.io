@@ -4,6 +4,8 @@ Dockerized Web Application using **Node.js + Express + PostgreSQL** with **Docke
 
 ---
 
+[View Project Report](Containerization_ProjectReport_VanshikaMunjal_500121784.pdf)
+
 ## 📁 Project Structure
 
 ```
